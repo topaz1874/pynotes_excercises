@@ -14,9 +14,25 @@ def get_longest_name(a_list):
 
     # your code here
     l_name = '******'
+
+    # better solution
+    """
+    max_length = max([len(name) for name in a_list])
+    duplicate_lengths = [name for name in a_list if len(name) == max_length]
+    if not a_list:
+        return l_name
+    if a_list == [''] or len(duplicate_lengths) > 1:
+        return l_name
+    else:
+        return ''.join(duplicate_lengths)
+    return l_name
+    """
+
     n_list = [(a_list[i], len(a_list[i])) for i in range(len(a_list))]
     sorted_list = sorted(n_list, key=lambda length:length[1])
     sorted_list.reverse()
+
+
     # print sorted_list
     if sorted_list:
         max_name_length = sorted_list[0][1]
