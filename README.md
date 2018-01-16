@@ -1,2 +1,2 @@
 
-These are some of the questions I answered at [Stack Overflow](https://stackoverflow.com/)
+These are some of the questions I try to figure out by myself.
